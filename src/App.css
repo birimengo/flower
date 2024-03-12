@@ -1,0 +1,193 @@
+.UpperToolbar {
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    display: flex; /* Arrange icons horizontally */
+    justify-content: space-between; /* Distribute icons evenly */
+    background: linear-gradient(to right, #ff758c, #ff7eb3,rgb(159, 79, 179)); /* Gradient background */
+    padding: 10px 20px; /* Padding */
+    z-index: 1000; /* Ensure it's on top of other elements */
+  }
+  
+  /* Adjust text size based on screen width */
+  .LocalFloristText,
+  .feedText,
+  .brightnessText,
+  .searchText,
+  .personText {
+    font-size: 1rem; /* Default font size */
+  }
+
+  
+  @media (max-width: 600px) {
+
+    .iconA, .iconB, .iconC, .iconD, .iconE {
+        font-size: 0.9rem !important;
+     } 
+     /* Reduce font size on small screens */
+
+    /* Reduce text size on small screens */
+    .LocalFloristText,
+    .feedText,
+    .brightnessText,
+    .searchText,
+    .personText {
+      font-size: 0.7rem;
+      left:10% !important;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-weight:700;
+      /*Centerhorizontally*/transform: translateX(2%) !important;
+      
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      
+
+
+}
+  
+    /* search-popup */
+    .search-popup {
+      position: fixed;
+      top: 4rem !important;
+      padding: 0 !important;
+
+      left: 50% !important; /* Center horizontally */
+      transform: translateX(-50%); /* Center horizontally */
+    }
+  
+    /* Search input border */
+    .texting {
+      border: 1px solid!important; /* Border style */
+      flex: 1; /* Take remaining space */
+      border-radius: 5px; /* Rounded corners */
+     /* outline: none; /* Remove outline */
+      padding: 8px; /* Padding */
+      
+    }
+  }
+  
+  .selected {
+    color: rgb(128, 238, 133); /* Change color of selected icon */
+  }
+  
+
+  
+  /* Icon animation on hover */
+  .UpperToolbar .iconA,
+  .UpperToolbar .iconB,
+  .UpperToolbar .iconC,
+  .UpperToolbar .iconD,
+  .UpperToolbar .iconE {
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .UpperToolbar .iconA:hover,
+  .UpperToolbar .iconB:hover,
+  .UpperToolbar .iconC:hover,
+  .UpperToolbar .iconD:hover,
+  .UpperToolbar .iconE:hover {
+    color: #96e5e7; /* Change color on hover */
+  }
+  
+  
+  .texting {
+    flex: 1; /* Take remaining space */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    padding: 8px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Submit button styling */
+  .close-up {
+    background-color: #4caf50; /* Background color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Padding */
+    margin-left: 10px; /* Adjust as needed */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+  }
+  /* Search input styling */
+.search-popup {
+    display: flex; /* Flex layout */
+    align-items: center; /* Center items vertically */
+    position: fixed; /* Fixed position */
+    top: 0.4rem; /* Adjust as needed */
+    left: 76.6%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #ffffff; /* Background color */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
+  }
+  
+  .texting {
+    flex: 1; /* Take remaining space */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    padding: 8px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Submit button styling */
+  .close-up {
+    background-color: #4caf50; /* Background color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Padding */
+    margin-left: 10px; /* Adjust as needed */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+  }
+  .popup-content{
+    display: flex;
+  }
+  /* Change button color on hover */
+.close-up:hover {
+    background-color: #45a049; /* New background color */
+  }
+
+  /*bottomtoolbar css */
+  .BottomToolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #ff758c, #ff7eb3,rgb(159, 79, 179)); /* Gradient background */
+
+    padding: 10px;  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.BottomToolbar .icon {
+    font-size: 2rem; /* Adjust icon size as needed */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.BottomToolbar .text {
+    font-size: 0.8rem; /* Adjust text size as needed */
+}
+
+.BottomToolbar .icon:hover {
+    color: #96e5e7; /* Change color on hover */
+}
+
+.BottomToolbar .icon:active {
+    color: rgb(128, 238, 133); /* Change color on click */
+}
+
+/* Adjust styles for small screens */
+@media (max-width: 600px) {
+    .BottomToolbar .text {
+        font-size: 0.7rem !important; /* Reduce font size on small screens */
+    }
+    .BottomToolbar .icon{
+        font-size: 1rem!important; /* Reduce font size on small screens */
+    }
+}
